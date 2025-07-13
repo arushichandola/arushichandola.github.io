@@ -41,6 +41,7 @@
       display: flex;
       gap: 1.5rem;
       font-size: 1.8rem;
+      margin-bottom: 3rem;
     }
 
     .links a {
@@ -50,16 +51,67 @@
     }
 
     .links a:hover {
-      color: #0072b1; /* LinkedIn blue */
+      color: #0072b1;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .bio, .interests {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .images img {
+      max-width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.2rem;
+      padding: 2rem 1rem;
+      background: #f9f1e7;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      .tagline { font-size: 1rem; }
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1>Arushi Chandola</h1>
     <p class="tagline">
-      Driven by curiosity, exploring Physics, Mathematics, Code, Communication, and Scientific creativity.
+      Driven by curiosity, exploring Physics, Code, Communication, and Scientific creativity.
     </p>
     <div class="links">
       <a href="https://github.com/arushichandola" target="_blank" aria-label="GitHub">
@@ -70,6 +122,34 @@
       </a>
     </div>
   </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p class="bio">
+        I'm a Computer Science undergrad with a strong inclination toward physics, communication, and creative expression through technology. Whether it's visualizing equations, debating ideas, or experimenting in Mathematica, I love combining logic with curiosity.
+      </p>
+    </section>
+
+    <section>
+      <h2>Visual Work</h2>
+      <div class="images">
+        <img src="AC.1flowerpink.png" alt="Pink Flower"/>
+        <img src="AC.2flowerblue.png" alt="Blue Flower"/>
+      </div>
+    </section>
+
+    <section>
+      <h2>Other Interests</h2>
+      <p class="interests">
+        I'm actively involved in debates and communication activities — I find joy in articulating ideas just as much as visualizing them. Outside of code, my interests flow into scientific inquiry, mathematics, and interdisciplinary creativity.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    आत्मनं विद्धि &nbsp;|&nbsp; एकोऽहम् बहुस्याम् &nbsp;|&nbsp; सर्वं खल्विदं ब्रह्म
+  </footer>
 
 </body>
 </html>
